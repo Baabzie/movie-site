@@ -53,7 +53,7 @@ const Movies: React.FC = () => {
       <ul className="movie-list" id="movieList">
         {movies.map((movie, i) => {
           return (
-            <li>
+            <li key={i}>
               <button onClick={() => handleButton(i)}>
                 <img alt={movie.title} src={movie.poster}></img>
               </button>
