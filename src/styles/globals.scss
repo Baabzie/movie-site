@@ -116,6 +116,9 @@ footer {
     color: white;
     margin: 0;
     margin-right: 50px;
+    @media (max-width: 650px) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -157,9 +160,9 @@ footer {
           margin: 6px 6px;
         }
         @media (max-width: 650px) {
-          width: 400px;
-          height: 600px;
-          margin: 6px 6px;
+          width: 90%;
+          height: auto;
+          margin: 1% 1%;
         }
       }
       img:hover {
@@ -173,9 +176,9 @@ footer {
           margin: 3px 3px;
         }
         @media (max-width: 650px) {
-          width: 404px;
-          height: 606px;
-          margin: 3px 3px;
+          width: 91%;
+          height: auto;
+          margin: 0.5% 0.5%;
         }
       }
     }
