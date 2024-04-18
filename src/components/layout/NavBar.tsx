@@ -5,7 +5,14 @@ export default function NavBar() {
     const element = document.getElementById("movieList");
 
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      // Calculate the offset by subtracting 100 pixels from the top of the element
+      const offset = element.offsetTop - 100;
+
+      // Scroll to the calculated offset position
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
     }
   };
 

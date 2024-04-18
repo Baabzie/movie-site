@@ -7,8 +7,13 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 800);
+      const element = document.getElementById("movieList");
+      if (element) {
+        const offset = element.offsetTop - 200;
+
+        const scrollTop = window.scrollY;
+        setIsScrolled(scrollTop > offset);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
