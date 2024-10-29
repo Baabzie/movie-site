@@ -1,6 +1,7 @@
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,6 +30,7 @@ export default function Header() {
         <h1>Biosidan</h1>
       </Link>
       <NavBar />
+      <SearchBar />
     </header>
   );
 }
