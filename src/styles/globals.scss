@@ -84,7 +84,6 @@ header {
           color: white;
           text-decoration: none;
           padding: 0;
-          // margin-bottom: 1.5rem;s
           margin-top: 0.7rem;
         }
       }
@@ -110,9 +109,9 @@ header {
     }
 
     input.visible {
-      width: 30vw; // Desired width when visible
+      width: 30vw;
       opacity: 1;
-      padding: 0 12px; // Padding added when input is visible
+      padding: 0 12px;
     }
 
     button {
@@ -122,7 +121,7 @@ header {
       border-radius: 0 22px 22px 0;
       padding: 0 12px;
       position: relative;
-      z-index: 1; // Ensures button is above the input when collapsed
+      z-index: 1;
       transition: border-radius 0.2s ease-in-out;
     }
 
@@ -130,7 +129,7 @@ header {
       border-radius: 22px;
     }
     input.visible + button {
-      border-radius: 0 22px 22px 0; // Restore right-side rounded corners when input is visible
+      border-radius: 0 22px 22px 0;
     }
   }
 }
